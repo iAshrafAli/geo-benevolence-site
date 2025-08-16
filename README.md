@@ -1,198 +1,201 @@
-# Geo Benevolence Foundation NGO Website
+# 🌍 Geo Benevolence Foundation Website
 
-A modern, responsive website for a non-governmental organization (NGO) with integrated Razorpay donation functionality, designed for GitHub Pages hosting.
+[![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fiashrafali.github.io%2Fgeo-benevolence-site%2F)](https://iashrafali.github.io/geo-benevolence-site/)
+[![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-blue)](https://iashrafali.github.io/geo-benevolence-site/)
+[![Responsive Design](https://img.shields.io/badge/Design-Responsive-green)](https://github.com/iAshrafAli/geo-benevolence-site)
+[![Razorpay Integration](https://img.shields.io/badge/Payments-Razorpay-orange)](https://razorpay.com)
 
-## Features
+A modern, responsive NGO website with integrated donation system, built with HTML5, CSS3, and JavaScript. Features professional blue+teal+grey design, mobile-first responsive approach, and secure Razorpay payment integration.
 
-- **Fully Responsive Design**: Optimized for all device sizes with comprehensive breakpoints
-  - Mobile-first approach with 6 responsive breakpoints (320px to 1200px+)
-  - Touch-friendly navigation with hamburger menu
-  - Swipe gestures for mobile menu interaction
-  - Optimized touch targets (minimum 44px)
-- **Donation Integration**: Secure payment processing through Razorpay
-- **Accessibility Features**:
-  - Keyboard navigation support
-  - Screen reader friendly
-  - Focus management and skip links
-  - WCAG 2.1 compliant color contrast
-- **Interactive Elements**:
-  - Smooth scrolling and CSS animations
-  - Modal dialogs with backdrop blur
-  - Form validation with visual feedback
-  - Loading states for better UX
-- **Performance Optimized**:
-  - CSS optimizations for mobile devices
-  - Efficient animations with `will-change`
-  - Compressed and optimized code
-- **GitHub Pages Ready**: Static website optimized for GitHub Pages hosting
+🔗 **Live Demo**: [https://iashrafali.github.io/geo-benevolence-site/](https://iashrafali.github.io/geo-benevolence-site/)
 
-## Tech Stack
+## ✨ Features
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Payment Gateway**: Razorpay
-- **Icons**: Font Awesome
-- **Hosting**: GitHub Pages
+### 🎨 **Modern Design System**
+- **Professional Color Palette**: Blue (#1e40af) + Teal (#0891b2) + Grey (#6b7280)
+- **Gradient Text Effects**: Dynamic gradient typography
+- **Glass Morphism**: Backdrop blur effects and translucent elements
+- **Watermark Animation**: 600px rotating logo background effect
+- **Smooth Animations**: CSS transitions and transforms
 
-## Setup Instructions
+### 📱 **Fully Responsive Design**
+- **Mobile-First Approach**: Optimized for all devices (320px to 1200px+)
+- **6 Responsive Breakpoints**: From small phones to large desktops
+- **Touch-Friendly Navigation**: Hamburger menu with smooth animations
+- **Enhanced Mobile Menu**: Glass morphism with gradient styling
+- **Optimized Touch Targets**: Minimum 44px for accessibility
 
-### 1. Razorpay Configuration
+### 💳 **Payment Integration**
+- **Razorpay Integration**: Secure donation processing
+- **Multiple Amount Options**: Pre-set and custom donation amounts
+- **Payment Modal**: Professional checkout experience
+- **Success/Error Handling**: Complete payment flow management
 
-Before deploying, you need to configure Razorpay:
+### ♿ **Accessibility & Performance**
+- **WCAG 2.1 Compliant**: Proper color contrast and accessibility
+- **Keyboard Navigation**: Full keyboard support
+- **Screen Reader Friendly**: Semantic HTML and ARIA labels
+- **Performance Optimized**: Fast loading and smooth animations
 
-1. Sign up for a Razorpay account at [https://razorpay.com](https://razorpay.com)
-2. Get your API keys from the Razorpay dashboard
-3. Replace the test key in `assets/js/script.js`:
+## 🛠️ Tech Stack
 
+| Technology | Purpose | Version |
+|------------|---------|---------|
+| **HTML5** | Structure & Semantics | Latest |
+| **CSS3** | Styling & Animations | Latest |
+| **JavaScript** | Interactivity | ES6+ |
+| **Razorpay** | Payment Processing | Latest API |
+| **Font Awesome** | Icons | 6.x |
+| **GitHub Pages** | Static Hosting | Latest |
+
+## 🚀 Quick Start
+
+### 1. **Clone & Deploy**
+```bash
+git clone https://github.com/iAshrafAli/geo-benevolence-site.git
+cd geo-benevolence-site
+
+# Enable GitHub Pages (if forking)
+# Go to Settings > Pages > Deploy from branch 'main'
+```
+
+### 2. **Razorpay Setup**
 ```javascript
-key: 'rzp_test_1234567890', // Replace with your actual Razorpay Key ID
+// In assets/js/script.js, replace:
+key: 'rzp_test_1234567890', // ← Replace with your Razorpay Key ID
 ```
 
-**Important**:
+**Get Razorpay Keys:**
+1. Sign up at [razorpay.com](https://razorpay.com)
+2. Dashboard → API Keys → Generate Key
+3. Use `rzp_test_*` for testing, `rzp_live_*` for production
 
-- For testing, use Razorpay test keys (they start with `rzp_test_`)
-- For production, use live keys (they start with `rzp_live_`)
-- Never commit live keys to public repositories
-
-### 2. Customization
-
-#### Organization Details
-
-Update the following in `index.html`:
-
-- Organization name (currently "Geo Benevolence Foundation")
-- Logo files (now with vibrant color theme integration):
-  - Navigation: `logo-horizontal-light.svg` (vibrant indigo #6366f1)
-  - Hero section: `logo-icon.svg` (vibrant colors with animated gradient shadows)
-  - Footer: `logo-horizontal-light.svg` (lighter vibrant variant for contrast)
-  - Favicon: `logo-icon.svg`
-  - Payment gateway: `logo-icon.svg`
-- Contact information (address, phone, email)
-- Social media links
-- Mission statement and descriptions
-
-#### Styling
-
-Modify `assets/css/style.css` to match your brand:
-
-- Color scheme (primary colors: `#2c5aa0`, `#e74c3c`)
-- Fonts and typography
-- Logo sizing and positioning
-- Branding elements
-
-#### Content
-
-Update sections with your organization's information:
-
-- Programs and services
-- Impact statistics
-- Team information
-- Success stories
-
-### 3. GitHub Pages Deployment
-
-1. Create a new repository on GitHub
-2. Upload all files to the repository
-3. Go to repository Settings > Pages
-4. Select source: "Deploy from a branch"
-5. Choose branch: "main" (or "master")
-6. Select folder: "/ (root)"
-7. Save and wait for deployment
-
-Your website will be available at: `https://yourusername.github.io/repository-name`
-
-## File Structure
-
-```
-NGO Website/
-├── index.html              # Main HTML file
-├── assets/
-│   ├── css/
-│   │   └── style.css       # Stylesheet
-│   ├── js/
-│   │   └── script.js       # JavaScript functionality
-│   └── logo/
-│       ├── logo-horizontal-light.svg  # Horizontal logo (navigation, footer)
-│       ├── logo-vertical-light.svg    # Vertical logo (available for layouts)
-│       ├── logo-icon.svg              # Icon only (hero, favicon, payments)
-│       └── logo-typo-light.svg        # Typography only
-├── .github/
-│   └── copilot-instructions.md
-├── CHANGES.md              # Change log
-└── README.md               # This file
+### 3. **Customization**
+```html
+<!-- Update in index.html -->
+<title>Your NGO Name</title>
+<h2>Your Organization Name</h2>
 ```
 
-## Donation Flow
+## 📁 Project Structure
 
-1. User clicks "Donate Now" button
-2. Modal opens with donation amount options
-3. User fills in personal information
-4. Razorpay checkout opens for secure payment
-5. Payment success/failure is handled appropriately
-6. User receives confirmation message
+```
+geo-benevolence-site/
+├── 📄 index.html                    # Main website file
+├── 📁 assets/
+│   ├── 🎨 css/
+│   │   ├── style.css                # Main stylesheet (blue+teal+grey theme)
+│   │   ├── style-modern-blue-backup.css  # Backup theme
+│   │   └── style-vibrant-backup.css      # Alternative theme
+│   ├── ⚡ js/
+│   │   └── script.js                # JavaScript functionality
+│   └── 🖼️ logo/
+│       ├── logo-horizontal-light.svg    # Header logo
+│       ├── logo-icon.svg               # Icon (favicon, hero)
+│       ├── logo-typo-light.svg         # Typography only
+│       └── logo-vertical-light.svg     # Vertical layout
+├── 📋 CHANGES.md                    # Version history
+└── 📖 README.md                     # This documentation
+```
 
-## Security Considerations
+## 🎨 Design System
 
-- Never expose secret keys in frontend code
-- Use HTTPS for all payment transactions
-- Implement proper backend verification for payments
-- Validate all user inputs
-- Follow Razorpay's security guidelines
+### **Color Palette**
+```css
+--primary-color: #1e40af;    /* Deep Blue */
+--secondary-color: #0891b2;  /* Teal */
+--accent-color: #6b7280;     /* Grey */
+```
 
-## Responsive Breakpoints
+### **Key Components**
+- **Watermark Logo**: 600px rotating background animation
+- **Gradient Text**: Linear gradients from primary to secondary colors
+- **Glass Morphism**: `backdrop-filter: blur(10px)` effects
+- **Responsive Navbar**: Mobile hamburger with enhanced styling
+- **Hero Section**: Clean layout with watermark integration
 
-The website is optimized for the following device sizes:
+## 📱 Responsive Design
 
-- **Extra Small (≤360px)**: Very small mobile phones
-- **Small Mobile (≤480px)**: Small mobile phones
-- **Mobile Medium (≤576px)**: Standard mobile phones
-- **Mobile Large (≤768px)**: Large phones and small tablets
-- **Tablet (769px-991px)**: Tablets and small laptops
-- **Desktop (992px-1199px)**: Standard desktop screens
-- **Large Desktop (≥1200px)**: Large desktop screens and monitors
+| Breakpoint | Width | Devices | Features |
+|------------|-------|---------|----------|
+| **XS** | ≤360px | Small phones | Compact layout |
+| **SM** | ≤480px | Standard phones | Optimized typography |
+| **MD** | ≤576px | Large phones | Enhanced spacing |
+| **LG** | ≤768px | Tablets | Hamburger menu |
+| **XL** | ≤991px | Small laptops | Grid adjustments |
+| **XXL** | ≥992px | Desktops | Full layout |
 
-### Mobile Features:
+### **Mobile Features**
+- ✅ Glass morphism mobile menu
+- ✅ Gradient hamburger icon
+- ✅ Touch-optimized buttons
+- ✅ Swipe-friendly navigation
+- ✅ Responsive donation grid
 
-- Hamburger navigation with smooth animations
-- Touch-optimized buttons and form elements
-- Swipe gestures for menu navigation
-- Optimized typography and spacing
-- Full-screen modal experience
-- Responsive donation amounts grid
+## 💰 Donation Flow
 
-## Browser Support
+1. **User clicks "Donate Now"** → Modal opens
+2. **Select amount** → Pre-set or custom amounts
+3. **Fill details** → Name, email, phone
+4. **Razorpay checkout** → Secure payment processing
+5. **Confirmation** → Success/failure handling
 
-- Chrome 60+ ✅
-- Firefox 55+ ✅
-- Safari 12+ ✅
-- Edge 79+ ✅
-- Mobile Safari (iOS 12+) ✅
-- Chrome Mobile (Android 7+) ✅
+## 🔒 Security Best Practices
 
-## Contributing
+- ✅ **No secret keys in frontend**
+- ✅ **HTTPS for all transactions**
+- ✅ **Input validation and sanitization**
+- ✅ **Razorpay security compliance**
+- ✅ **Backend verification recommended**
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+## 🌐 Browser Support
 
-## License
+| Browser | Version | Status |
+|---------|---------|---------|
+| Chrome | 60+ | ✅ Fully Supported |
+| Firefox | 55+ | ✅ Fully Supported |
+| Safari | 12+ | ✅ Fully Supported |
+| Edge | 79+ | ✅ Fully Supported |
+| Mobile Safari | iOS 12+ | ✅ Optimized |
+| Chrome Mobile | Android 7+ | ✅ Optimized |
 
-This project is open source and available under the [MIT License](LICENSE).
+## 🤝 Contributing
 
-## Support
+1. **Fork** the repository
+2. **Create** feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to branch (`git push origin feature/amazing-feature`)
+5. **Open** Pull Request
 
-For support or questions:
+## 📄 License
 
-- Email: info@geobenevolencefoundation.org
-- Phone: +1 (555) 123-4567
+This project is open source and available under the **MIT License**.
 
-## Acknowledgments
+## 📞 Support & Contact
 
-- Font Awesome for icons
-- Razorpay for payment processing
-- GitHub Pages for hosting
+- 🌐 **Website**: [https://iashrafali.github.io/geo-benevolence-site/](https://iashrafali.github.io/geo-benevolence-site/)
+- 📧 **Email**: info@geobenevolencefoundation.org
+- 📱 **Phone**: +1 (555) 123-4567
+- 💻 **GitHub Issues**: [Report bugs or request features](https://github.com/iAshrafAli/geo-benevolence-site/issues)
+
+## 🙏 Acknowledgments
+
+- **[Razorpay](https://razorpay.com)** - Payment processing
+- **[Font Awesome](https://fontawesome.com)** - Icon library
+- **[GitHub Pages](https://pages.github.com)** - Free hosting
+- **Modern CSS** - Design inspiration
 
 ---
 
-**Note**: This is a template website. Replace all placeholder content, contact information, and branding with your organization's actual details before deploying to production.
+<div align="center">
+
+**⭐ Star this repository if it helped you!**
+
+[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red)](https://github.com/iAshrafAli/geo-benevolence-site)
+[![GitHub stars](https://img.shields.io/github/stars/iAshrafAli/geo-benevolence-site?style=social)](https://github.com/iAshrafAli/geo-benevolence-site/stargazers)
+
+</div>
+
+---
+
+> **Note**: This is a template website. Replace all placeholder content, contact information, and branding with your organization's actual details before deploying to production.
